@@ -91,6 +91,20 @@
     #define PIN_USI_SCL         PINB7
 #endif
 
+#if defined(__AVR_ATtiny84__) | \
+     defined(__AVR_ATtiny44__)
+#  define DDR_USI             DDRA
+#  define PORT_USI            PORTA
+#  define PIN_USI             PINA
+#  define PORT_USI_SDA        PORTA6
+#  define PORT_USI_SCL        PORTA4
+#  define PIN_USI_SDA         PINA6
+#  define PIN_USI_SCL         PINA4
+#  define USI_START_COND_INT  USISIF
+#  define USI_START_VECTOR    USI_START_vect
+#  define USI_OVERFLOW_VECTOR USI_OVF_vect
+#endif
+
 /* From the original .h
 // Device dependant defines - These for ATtiny2313. // CHANGED FOR ATtiny85
 
