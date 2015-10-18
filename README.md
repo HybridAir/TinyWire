@@ -1,3 +1,7 @@
+Added modifications to make it more compatible with carbt_v1
+I think I was trying to optimize it or something I forgot
+But the original didn't work without my changes either
+
 # Arduino TinyWire Library
 
 TinyWire is an Arduino library, that provides I2C support for ATtiny micro controllers.
